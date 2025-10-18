@@ -1,25 +1,20 @@
-import React from 'react'
+import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#263238] text-white py-16 px-8 sm:px-12 lg:px-20">
+    <footer className="bg-secondary-gray text-white py-16 px-8 sm:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between gap-12">
-        
-        {/* Left Section */}
         <div className="flex flex-col space-y-6 lg:w-1/3">
-          {/* Logo */}
           <div className="flex items-center">
             <img src="/logo.svg" alt="logo" className="w-8 h-8 mr-2" />
             <h2 className="text-2xl font-semibold">Nexcent</h2>
           </div>
 
-          {/* Copyright */}
           <div className="text-gray-400 text-sm leading-relaxed">
             <p>Copyright © 2020 Landify UI Kit.</p>
             <p>All rights reserved</p>
           </div>
 
-          {/* Social Icons */}
           <div className="flex space-x-4">
             {["instagram", "web", "twitter", "youtube"].map((icon) => (
               <a
@@ -33,9 +28,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Right Section */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 lg:w-2/3">
-          {/* Company */}
           <div>
             <h3 className="text-white font-semibold text-lg mb-4">Company</h3>
             <ul className="space-y-2">
@@ -49,7 +42,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Support */}
           <div>
             <h3 className="text-white font-semibold text-lg mb-4">Support</h3>
             <ul className="space-y-2">
@@ -63,7 +55,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Stay up to date */}
           <div>
             <h3 className="text-white font-semibold text-lg mb-4">Stay up to date</h3>
             <form className="relative">
@@ -83,7 +74,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

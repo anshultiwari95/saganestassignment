@@ -1,17 +1,19 @@
 "use client"
-import React, { useState } from 'react'
-import Button from '../button/Button.jsx'
+import React, { useState } from 'react';
+import Button from '../button/Button.jsx';
 
 export const Headers = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen)
-  }
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   const closeMobileMenu = () => {
-    setIsMobileMenuOpen(false)
-  }
+    setIsMobileMenuOpen(false);
+  };
+
+  const navItems = ["Home", "Features", "Community", "Blog", "Pricing"];
 
   return (
     <header className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
@@ -30,29 +32,21 @@ export const Headers = () => {
             />
           </div>
           
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-3 lg:space-x-6 xl:space-x-8">
-            <a href="#" className="font-inter font-medium text-sm md:text-base lg:text-[11.14px] lg:leading-[16.71px] lg:tracking-[0%] text-left md:text-center lg:text-center text-[#4D4D4D] hover:text-primary-green hover:scale-105 cursor-pointer transition-all duration-200 px-2 py-1 rounded-md hover:bg-green-50">
-              Home
-            </a>
-            <a href="#" className="font-inter font-medium text-sm md:text-base lg:text-[11.14px] lg:leading-[16.71px] lg:tracking-[0%] text-left md:text-center lg:text-center text-[#4D4D4D] hover:text-primary-green hover:scale-105 cursor-pointer transition-all duration-200 px-2 py-1 rounded-md hover:bg-green-50">
-              Features
-            </a>
-            <a href="#" className="font-inter font-medium text-sm md:text-base lg:text-[11.14px] lg:leading-[16.71px] lg:tracking-[0%] text-left md:text-center lg:text-center text-[#4D4D4D] hover:text-primary-green hover:scale-105 cursor-pointer transition-all duration-200 px-2 py-1 rounded-md hover:bg-green-50">
-              Community
-            </a>
-            <a href="#" className="font-inter font-medium text-sm md:text-base lg:text-[11.14px] lg:leading-[16.71px] lg:tracking-[0%] text-left md:text-center lg:text-center text-[#4D4D4D] hover:text-primary-green hover:scale-105 cursor-pointer transition-all duration-200 px-2 py-1 rounded-md hover:bg-green-50">
-              Blog
-            </a>
-            <a href="#" className="font-inter font-medium text-sm md:text-base lg:text-[11.14px] lg:leading-[16.71px] lg:tracking-[0%] text-left md:text-center lg:text-center text-[#4D4D4D] hover:text-primary-green hover:scale-105 cursor-pointer transition-all duration-200 px-2 py-1 rounded-md hover:bg-green-50">
-              Pricing
-            </a>  
+            {navItems.map((item) => (
+              <a 
+                key={item}
+                href="#" 
+                className="font-inter font-medium text-sm md:text-base lg:text-[11.14px] lg:leading-[16.71px] lg:tracking-[0%] text-left md:text-center lg:text-center text-secondary hover:text-green hover:scale-105 cursor-pointer transition-all duration-200 px-2 py-1 rounded-md hover:bg-green-50"
+              >
+                {item}
+              </a>
+            ))}
             <Button icon={<img src="/arrow.svg" alt="Register" className="w-3 h-3 sm:w-4 sm:h-4" />} iconPosition="right" className="text-xs sm:text-sm px-3 py-2 sm:px-6 sm:py-3">
               Register Now
             </Button>
           </nav>
 
-          {/* Mobile Menu Button */}
           <button 
             onClick={toggleMobileMenu}
             className="md:hidden text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900 p-2 rounded-md transition-all duration-150" 
@@ -69,45 +63,19 @@ export const Headers = () => {
           </button>
         </div>
 
-        {/* Mobile Navigation Menu */}
         {isMobileMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200">
-              <a 
-                href="#" 
-                onClick={closeMobileMenu}
-                className="block px-3 py-2 text-sm font-inter font-medium text-left text-[#4D4D4D] hover:text-primary-green hover:bg-green-50 rounded-md transition-all duration-200"
-              >
-                Home
-              </a>
-              <a 
-                href="#" 
-                onClick={closeMobileMenu}
-                className="block px-3 py-2 text-sm font-inter font-medium text-left text-[#4D4D4D] hover:text-primary-green hover:bg-green-50 rounded-md transition-all duration-200"
-              >
-                Features
-              </a>
-              <a 
-                href="#" 
-                onClick={closeMobileMenu}
-                className="block px-3 py-2 text-sm font-inter font-medium text-left text-[#4D4D4D] hover:text-primary-green hover:bg-green-50 rounded-md transition-all duration-200"
-              >
-                Community
-              </a>
-              <a 
-                href="#" 
-                onClick={closeMobileMenu}
-                className="block px-3 py-2 text-sm font-inter font-medium text-left text-[#4D4D4D] hover:text-primary-green hover:bg-green-50 rounded-md transition-all duration-200"
-              >
-                Blog
-              </a>
-              <a 
-                href="#" 
-                onClick={closeMobileMenu}
-                className="block px-3 py-2 text-sm font-inter font-medium text-left text-[#4D4D4D] hover:text-primary-green hover:bg-green-50 rounded-md transition-all duration-200"
-              >
-                Pricing
-              </a>
+              {navItems.map((item) => (
+                <a 
+                  key={item}
+                  href="#" 
+                  onClick={closeMobileMenu}
+                  className="block px-3 py-2 text-sm font-inter font-medium text-left text-secondary hover:text-green hover:bg-green-50 rounded-md transition-all duration-200"
+                >
+                  {item}
+                </a>
+              ))}
               <div className="pt-2">
                 <Button 
                   icon={<img src="/arrow.svg" alt="Register" className="w-4 h-4" />} 
@@ -123,7 +91,7 @@ export const Headers = () => {
         )}
       </nav>
     </header>
-  )
-}
+  );
+};
 
-export default Headers
+export default Headers;
