@@ -131,11 +131,53 @@ body {
 }
 
 /* Responsive Typography */
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   :root {
+    --font-size-xs: 10px;
+    --font-size-sm: 12px;
+    --font-size-base: 14px;
+    --font-size-lg: 16px;
+    --font-size-xl: 18px;
     --font-size-2xl: 20px;
+    --font-size-3xl: 28px;
+    --line-height-tight: 14px;
+    --line-height-normal: 18px;
+    --line-height-relaxed: 20px;
+    --line-height-loose: 22px;
+    --line-height-xl: 36px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  :root {
+    --font-size-xs: 11px;
+    --font-size-sm: 13px;
+    --font-size-base: 15px;
+    --font-size-lg: 17px;
+    --font-size-xl: 19px;
+    --font-size-2xl: 22px;
     --font-size-3xl: 32px;
-    --line-height-loose: 24px;
+    --line-height-tight: 15px;
+    --line-height-normal: 19px;
+    --line-height-relaxed: 22px;
+    --line-height-loose: 26px;
     --line-height-xl: 40px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  :root {
+    --font-size-xs: 11.14px;
+    --font-size-sm: 14px;
+    --font-size-base: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 20px;
+    --font-size-2xl: 25.06px;
+    --font-size-3xl: 38px;
+    --line-height-tight: 16.71px;
+    --line-height-normal: 20px;
+    --line-height-relaxed: 24px;
+    --line-height-loose: 30.63px;
+    --line-height-xl: 48px;
   }
 }
