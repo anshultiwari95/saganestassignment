@@ -76,6 +76,7 @@ body {
 
 .bg-primary { background-color: var(--background-white); }
 .bg-light { background-color: var(--background-light); }
+.bg-secondary-gray { background-color: var(--secondary-gray); }
 
 .hover-lift {
   transition: transform var(--transition-fast), box-shadow var(--transition-fast);
