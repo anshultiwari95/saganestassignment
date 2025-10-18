@@ -14,11 +14,11 @@ const Spending = () => {
             />
           </figure>
           <header className="flex flex-col items-center lg:items-start text-center lg:text-left flex-1 order-1 lg:order-2">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight">
+            <h2 className="font-inter font-semibold text-lg sm:text-xl md:text-2xl lg:text-[25.06px] lg:leading-[30.63px] lg:tracking-[0%] text-[#4D4D4D] mb-4 sm:mb-6 leading-tight">
               The unseen of spending three years<br/>
               at Pixelgrade
             </h2>
-            <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-6 sm:mb-8 max-w-2xl leading-relaxed">
+            <p className="font-inter font-normal text-xs sm:text-sm md:text-base lg:text-[9.74px] lg:leading-[13.92px] lg:tracking-[0%] text-[#717171] mb-6 sm:mb-8 max-w-2xl leading-relaxed">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.
             </p>
             <Button className="w-auto px-4 py-2 sm:px-6 sm:py-3 text-xs sm:text-sm lg:text-base">

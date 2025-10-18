@@ -13,26 +13,26 @@ const Client = () => {
           </p>
         </header>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-6 sm:gap-8 lg:gap-12 items-center justify-items-center">
-          <figure className="h-6 sm:h-8 md:h-[34px] flex items-center justify-center">
-            <img src="/client1.svg" alt="Client 1" className="w-full h-full object-contain" />
+          <figure className="h-6 sm:h-8 md:h-[34px] flex items-center justify-center hover-scale cursor-pointer transition-all duration-300 hover:opacity-80">
+            <img src="/client1.svg" alt="Client 1" className="w-full h-full object-contain transition-all duration-300" />
           </figure>
-          <figure className="h-6 sm:h-8 md:h-[34px] flex items-center justify-center">
-            <img src="/client2.svg" alt="Client 2" className="w-full h-full object-contain" />
+          <figure className="h-6 sm:h-8 md:h-[34px] flex items-center justify-center hover-scale cursor-pointer transition-all duration-300 hover:opacity-80">
+            <img src="/client2.svg" alt="Client 2" className="w-full h-full object-contain transition-all duration-300" />
           </figure>
-          <figure className="h-6 sm:h-8 md:h-[34px] flex items-center justify-center">
-            <img src="/client3.svg" alt="Client 3" className="w-full h-full object-contain" />
+          <figure className="h-6 sm:h-8 md:h-[34px] flex items-center justify-center hover-scale cursor-pointer transition-all duration-300 hover:opacity-80">
+            <img src="/client3.svg" alt="Client 3" className="w-full h-full object-contain transition-all duration-300" />
           </figure>
-          <figure className="h-6 sm:h-8 md:h-[34px] flex items-center justify-center">
-            <img src="/client4.svg" alt="Client 4" className="w-full h-full object-contain" />
+          <figure className="h-6 sm:h-8 md:h-[34px] flex items-center justify-center hover-scale cursor-pointer transition-all duration-300 hover:opacity-80">
+            <img src="/client4.svg" alt="Client 4" className="w-full h-full object-contain transition-all duration-300" />
           </figure>
-          <figure className="h-6 sm:h-8 md:h-[34px] flex items-center justify-center">
-            <img src="/client5.svg" alt="Client 5" className="w-full h-full object-contain" />
+          <figure className="h-6 sm:h-8 md:h-[34px] flex items-center justify-center hover-scale cursor-pointer transition-all duration-300 hover:opacity-80">
+            <img src="/client5.svg" alt="Client 5" className="w-full h-full object-contain transition-all duration-300" />
           </figure>
-          <figure className="h-6 sm:h-8 md:h-[34px] flex items-center justify-center">
-            <img src="/client6.svg" alt="Client 6" className="w-full h-full object-contain" />
+          <figure className="h-6 sm:h-8 md:h-[34px] flex items-center justify-center hover-scale cursor-pointer transition-all duration-300 hover:opacity-80">
+            <img src="/client6.svg" alt="Client 6" className="w-full h-full object-contain transition-all duration-300" />
           </figure>
-          <figure className="h-6 sm:h-8 md:h-[34px] flex items-center justify-center">
-            <img src="/client7.svg" alt="Client 7" className="w-full h-full object-contain" />
+          <figure className="h-6 sm:h-8 md:h-[34px] flex items-center justify-center hover-scale cursor-pointer transition-all duration-300 hover:opacity-80">
+            <img src="/client7.svg" alt="Client 7" className="w-full h-full object-contain transition-all duration-300" />
           </figure>
         </div>
       </div>

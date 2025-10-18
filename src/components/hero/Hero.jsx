@@ -5,13 +5,13 @@ const Hero = () => {
   return (
     <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-light">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+        <div className="flex flex-col lg:flex-row items-center justify-around gap-8 lg:gap-12">
           <header className="flex flex-col items-center lg:items-start text-center lg:text-left flex-1">
             <h1 className="mb-4 sm:mb-6">
               <span className="text-primary font-semibold text-xl sm:text-2xl md:text-3xl lg:text-[44.55px] leading-tight lg:leading-[52.9px] tracking-[0%]">Lessons and insights</span><br/>
               <span className="text-green font-semibold text-xl sm:text-2xl md:text-3xl lg:text-[44.55px] leading-tight lg:leading-[52.9px] tracking-[0%]">from 8 years</span>
             </h1>
-            <p className="text-tertiary font-normal text-xs sm:text-sm lg:text-[11.14px] leading-tight lg:leading-[16.71px] tracking-[0%] mb-6 sm:mb-8 max-w-2xl">
+            <p className="font-inter font-normal text-sm md:text-base lg:text-[11.14px] lg:leading-[16.71px] lg:tracking-[0%] mb-6 sm:mb-8 max-w-2xl text-center lg:text-left text-[#717171]">
               Where to grow your business as a photographer: site or social media?
             </p>
             <Button className="px-4 py-2 sm:px-6 sm:py-3 lg:px-8 lg:py-4 text-xs sm:text-sm lg:text-base font-medium hover-lift">
@@ -28,7 +28,7 @@ const Hero = () => {
         </div>
         <nav className="flex justify-center mt-6 sm:mt-8 lg:mt-12" aria-label="Hero pagination">
           <div className="flex space-x-2">
-            <button className="w-2 h-2 bg-green rounded-full hover-scale cursor-pointer" aria-label="Go to slide 1"></button>
+            <button className="w-2 h-2 bg-[#4CAF50] rounded-full hover-scale cursor-pointer" aria-label="Go to slide 1"></button>
             <button className="w-2 h-2 bg-gray-300 rounded-full hover-scale cursor-pointer" aria-label="Go to slide 2"></button>
             <button className="w-2 h-2 bg-gray-300 rounded-full hover-scale cursor-pointer" aria-label="Go to slide 3"></button>
           </div>
