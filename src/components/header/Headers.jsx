@@ -19,19 +19,19 @@ export const Headers = () => {
             />
           </div>
           <div className="hidden md:flex items-center space-x-4 lg:space-x-8">
-            <span className="font-inter font-medium text-xs sm:text-[11.14px] leading-[16.71px] tracking-[0%] text-center text-[#4D4D4D] hover:text-gray-900 cursor-pointer transition-colors">
+            <span className="font-inter font-medium text-xs sm:text-[11.14px] leading-[16.71px] tracking-[0%] text-center text-[#4D4D4D] hover:text-primary-green hover:scale-105 cursor-pointer transition-all duration-200 px-2 py-1 rounded-md hover:bg-green-50">
               Home
             </span>
-            <span className="font-inter font-medium text-xs sm:text-[11.14px] leading-[16.71px] tracking-[0%] text-center text-[#4D4D4D] hover:text-gray-900 cursor-pointer transition-colors">
+            <span className="font-inter font-medium text-xs sm:text-[11.14px] leading-[16.71px] tracking-[0%] text-center text-[#4D4D4D] hover:text-primary-green hover:scale-105 cursor-pointer transition-all duration-200 px-2 py-1 rounded-md hover:bg-green-50">
               Features
             </span>
-            <span className="font-inter font-medium text-xs sm:text-[11.14px] leading-[16.71px] tracking-[0%] text-center text-[#4D4D4D] hover:text-gray-900 cursor-pointer transition-colors">
+            <span className="font-inter font-medium text-xs sm:text-[11.14px] leading-[16.71px] tracking-[0%] text-center text-[#4D4D4D] hover:text-primary-green hover:scale-105 cursor-pointer transition-all duration-200 px-2 py-1 rounded-md hover:bg-green-50">
               Community
             </span>
-            <span className="font-inter font-medium text-xs sm:text-[11.14px] leading-[16.71px] tracking-[0%] text-center text-[#4D4D4D] hover:text-gray-900 cursor-pointer transition-colors">
+            <span className="font-inter font-medium text-xs sm:text-[11.14px] leading-[16.71px] tracking-[0%] text-center text-[#4D4D4D] hover:text-primary-green hover:scale-105 cursor-pointer transition-all duration-200 px-2 py-1 rounded-md hover:bg-green-50">
               Blog
             </span>
-            <span className="font-inter font-medium text-xs sm:text-[11.14px] leading-[16.71px] tracking-[0%] text-center text-[#4D4D4D] hover:text-gray-900 cursor-pointer transition-colors">
+            <span className="font-inter font-medium text-xs sm:text-[11.14px] leading-[16.71px] tracking-[0%] text-center text-[#4D4D4D] hover:text-primary-green hover:scale-105 cursor-pointer transition-all duration-200 px-2 py-1 rounded-md hover:bg-green-50">
               Pricing
             </span>  
             <Button icon={<img src="/arrow.svg" alt="Register" className="w-3 h-3 sm:w-4 sm:h-4" />} iconPosition="right" className="text-xs sm:text-sm px-3 py-2 sm:px-6 sm:py-3">
